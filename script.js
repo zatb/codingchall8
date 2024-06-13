@@ -26,5 +26,7 @@ document.getElementById('registrationForm').addEventListener('submit', function(
         <p><strong>Event Date:</strong> ${eventDate}</p>
         <p><strong>Meal Preferences:</strong> ${preferences.join(', ')}</p>
     `;
+    // Upon form submission, dynamically create elements within the registration display area to show the registrant’s name, email, selected event date, and preferences.
+    document.getElementById('registrationDetails').innerHTML = registrationDetails;
 });
 
